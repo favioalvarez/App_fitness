@@ -68,7 +68,7 @@ public class insumos_act extends AppCompatActivity {
                 ed_nombre.setText(fila.getString(0));
                 ed_precio.setText(fila.getString(1));
                 ed_stock.setText(fila.getString(2));
-
+                fila.close();
             }
         }else
         {
