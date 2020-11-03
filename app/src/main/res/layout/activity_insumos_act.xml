@@ -11,13 +11,17 @@
         android:id="@+id/imageView2"
         android:layout_width="261dp"
         android:layout_height="147dp"
-        android:layout_marginTop="56dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.44"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/bd_men" />
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/bd_men"
+        android:contentDescription="TODO" />
 
     <LinearLayout
+        android:id="@+id/linearLayout3"
         android:layout_width="317dp"
         android:layout_height="199dp"
         android:orientation="vertical"
@@ -32,31 +36,83 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:inputType="textPersonName"
-            android:text="codigo" />
+            android:hint="codigo"
+            android:inputType="textPersonName" />
 
         <EditText
             android:id="@+id/enombre"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:inputType="textPersonName"
-            android:text="nombre" />
+            android:hint="nombre"
+            android:inputType="textPersonName" />
 
         <EditText
             android:id="@+id/eprecio"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:inputType="textPersonName"
-            android:text="precio" />
+            android:hint="precio"
+            android:inputType="textPersonName" />
 
         <EditText
             android:id="@+id/estock"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:inputType="textPersonName"
-            android:text="stock" />
+            android:hint="stock"
+            android:inputType="textPersonName" />
     </LinearLayout>
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="311dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="12dp"
+        android:onClick="AñadirInsumos"
+        android:text="guardar insumos"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="305dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="16dp"
+        android:onClick="MostrarInsumos"
+        android:text="mostrar insumos"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button2" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="282dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="8dp"
+        android:onClick="EliminarInsumos"
+        android:text="eliminar insumos"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.511"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button3"
+        app:layout_constraintVertical_bias="0.079" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="295dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="24dp"
+        android:onClick="ActualizarInsumos"
+        android:text="actualizar insumos"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.456"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button4"
+        app:layout_constraintVertical_bias="0.037" />
 </androidx.constraintlayout.widget.ConstraintLayout>
