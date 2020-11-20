@@ -28,7 +28,7 @@ public class insumos_act extends AppCompatActivity {
 
     }
 
-    public void AñadirInsumos(View v)
+    public void AñadirInsumos(View v)//aca esta  bien escrito
     {
         AdminSQLiteOpenHelper admin = new AdminSQLiteOpenHelper(this, "fichero",null, 1);
         SQLiteDatabase db = admin.getWritableDatabase();
@@ -59,6 +59,7 @@ public class insumos_act extends AppCompatActivity {
         SQLiteDatabase db = admin.getWritableDatabase();
 
         String codigo = ed_codigo.getText().toString();
+
 
         if(!codigo.isEmpty())
         {
